@@ -24,7 +24,6 @@ function mayoriaDeEdad(edad) {
   }
 }
 
-  
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -94,10 +93,10 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero < 50 && numero > 20);{
-    return "true"
-  }
-}
+   return numero < 50 && numero > 20;
+ } 
+
+
 
 
 function esEntero(numero) {
@@ -108,11 +107,10 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  function esEntero(numero){
     if (numero % 1 == 0) {
-        return "true";
+        return true;
     } else {
-        return "false";
+        return false;
     }
 }
 function fizzBuzz(numero) {
@@ -228,4 +226,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-};
+}
